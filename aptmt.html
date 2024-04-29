@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="apis.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Healin' Care Records</title>
+   </head>
+<body>
+  <div class="container">
+    <div class="title">User Record</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Doctor </span>
+            <input type="text" placeholder="Enter your Doctor's Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Hospital Name</span>
+            <input type="text" placeholder="Enter your Hospital Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Diagnosis for</span>
+            <input type="text" placeholder="Enter your Health issue" required>
+          </div>
+         
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="input-box">
+            <span class="details">Diagnosis Reports (if any)</span>
+        <form style="align-items: center;" action="fileupload.php" enctype="multipart/form-data" method="post"><label class="custom-uploader"
+            for="file"></label> <input id="file" accept="image/jpeg,image/gif,image/png,application/pdf,image/x-eps" name="fileToUpload" type="file" />
+           
+        </div>
+            
+           
+
+        <div class="button">
+          <input type="submit" value="Submit">
+          
+          
+        </div>
+
+       
+      </form>
+      <a href="demo22.html"><input type="button" style="cursor: pointer;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);"value="Return Back To Home Page"></a>
+      
+    </div>
+  </div>
+</body>
+</html>
